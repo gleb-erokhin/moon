@@ -1,0 +1,25 @@
+.footer {
+	background-color: var(--color-bg);
+	padding: 50px 0;
+	font-size: 32px;
+	color: var(--color-light);
+
+	h1 {
+		font-size: 32px;
+	}
+
+	a {
+		color: var(--color-light);
+		text-decoration: underline;
+	}
+
+	@media (max-width: $desktop) {
+		font-size: 26px;
+	}
+}
+
+.footer__copyright {
+	padding: 10px 0;
+	font-size: 16px;
+
+}

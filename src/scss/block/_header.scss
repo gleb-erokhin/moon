@@ -1,0 +1,32 @@
+.header {
+	background-color: var(--color-bg);
+	padding: 24px 0;
+
+	&__row {
+		@include df-jc-ac(space-between);
+		column-gap: 30px;
+	}
+
+	&__logo {
+		margin-right: auto;
+	}
+	&__img {
+	}
+	&__wrapper,
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 40px;
+	}
+	&__link--accent {
+		color: var(--color-accent);
+	}
+	&__list {
+		column-gap: 20px;
+	}
+	&__item {
+	}
+	&__button {
+	}
+}
