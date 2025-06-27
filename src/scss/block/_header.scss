@@ -9,8 +9,12 @@
 
 	&__logo {
 		margin-right: auto;
+		flex-shrink: 0;
 	}
 	&__img {
+	}
+	&__wrapper {
+		
 	}
 	&__wrapper,
 	&__list {
@@ -25,7 +29,11 @@
 	&__list {
 		column-gap: 20px;
 	}
-	&__item {
+	&__item,
+	&__link {
+		@include hover {
+			opacity: 0.8;
+		}
 	}
 	&__button {
 	}
