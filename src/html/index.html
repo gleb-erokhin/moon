@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
 
-    @@include('blocks\style.html')
-    
-    <title>Document</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
 
-    @@include('blocks/header.html')
+        @@include('blocks\style.html')
 
-    <main class="main">
+        <title>Document</title>
+    </head>
 
-    </main>
+    <body>
 
-    @@include('blocks/footer.html')
+        @@include('blocks/header.html')
 
-    <script src="../js/main.js"></script>
-</body>
+        <main class="main">
+            @@include('blocks/choice.html')
+        </main>
+
+        @@include('blocks/footer.html')
+
+        <script src="../js/main.js"></script>
+    </body>
+
 </html>
