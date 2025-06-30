@@ -16,8 +16,13 @@
         @@include('blocks/header.html')
 
         <main class="main">
-            @@include('blocks/choice.html')
-            @@include('blocks/cards.html')
+            <section class="section container">
+                @@include('blocks/select-types.html')
+            </section>
+            
+            <section class="section container">
+                @@include('blocks/cards.html')
+            </section>
         </main>
 
         @@include('blocks/footer.html')
