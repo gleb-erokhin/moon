@@ -1,7 +1,6 @@
 .header {
 	background-color: var(--color-bg);
 	padding: 24px 0;
-	margin-bottom: var(--section-padding-y);
 
 	&__row {
 		@include df-jc-ac(space-between);

@@ -1,28 +1,32 @@
 :root {
     // main
-	--container-width: 1216px;
-	--container-padding-x: 15px;
-    --section-padding-y: 20px;
-	
+    --container-width: 1216px;
+    --container-padding-x: 15px;
+    --section-padding-y: 40px;
+
+    @include mobile {
+        --section-padding-y: 20px;
+    }
+
     // fonts
-	--font-main: "Gilroy", sans-serif;
-	--font-accent: "Manrope", sans-serif;
+    --font-main: "Gilroy", sans-serif;
+    --font-accent: "Manrope", sans-serif;
 
     // colors
     --color-light: #ffffff;
     --color-light-alt: #fcfcfc;
-    --color-accent: #ff941a; 
-    --color-accent-alt: #ffac4d; 
+    --color-accent: #ff941a;
+    --color-accent-alt: #ffac4d;
     --color-blue-900: #20264c;
     --color-blue-700: #515674;
-    --color-dark: #393e60; 
+    --color-dark: #393e60;
     --color-gray: #e6e7eb;
     --color-gray-alt: #83879b;
     --color-bg: #070e38;
     --color-shadow: rgba(106, 99, 118, 0.1);
 
     // borders
-	--border: 1px solid var(--color-gray);
+    --border: 1px solid var(--color-gray);
     --border-radius-small: 10px;
     --border-radius-large: 40px;
 

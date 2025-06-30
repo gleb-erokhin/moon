@@ -1,7 +1,18 @@
 .section {
+    padding-block: var(--section-padding-y);
+
     &__choice {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
     &__title {
+        color: var(--color-blue-900);
     }
     &__types {
         display: flex;
@@ -13,6 +24,10 @@
         color: var(--color-blue-700);
         background-color: var(--color-gray);
         border-radius: var(--border-radius-large);
+
+        @include mobile {
+            width: 374px;
+        }
     }
     &__radio-btn {
         display: inline-block;
@@ -31,6 +46,11 @@
         text-align: center;
         border-radius: var(--border-radius-large);
         user-select: none;
+        transition: all var(--transition-duration) ease-in;
+
+        @include mobile {
+            width: 117px;
+        }
     }
 
     // Checked
