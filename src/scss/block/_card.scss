@@ -1,12 +1,12 @@
 .card {
+    width: 100%;
     padding: 24px;
     box-shadow: var(--shadow);
 
-    &__inner {
-        margin-bottom: 24px;
-        padding-bottom: 24px;
-        border-bottom: var(--border);
+    @include desktop {
+        max-width: 1024px;
     }
+
     &__inner,
     &__picture-list {
         display: flex;
@@ -14,8 +14,22 @@
         align-items: center;
         column-gap: var(--gap);
     }
+    &__inner {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: var(--border);
+
+        @include desktop {
+            flex-direction: column;
+            row-gap: 24px;
+            align-items: start;
+        }
+
+        @include mobile {
+            row-gap: 34px;
+        }
+    }
     &__img-logo {
-        margin-right: 20px;
     }
     &__img-logo img,
     &__picture-examples {
@@ -24,6 +38,8 @@
     &__about {
         flex-shrink: 0;
         display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
     }
     &__address {
         display: flex;
@@ -81,6 +97,9 @@
         color: var(--color-blue-900);
     }
     &__picture-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--gap);
     }
     &_picture-item {
     }
@@ -90,6 +109,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        @include mobile {
+            justify-content: center;
+            gap: var(--gap);
+        }
     }
     &__buttons-del {
         color: var(--color-dark);
