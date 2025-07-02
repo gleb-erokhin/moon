@@ -1,0 +1,99 @@
+.card {
+    padding: 24px;
+    box-shadow: var(--shadow);
+
+    &__inner {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom: var(--border);
+    }
+    &__inner,
+    &__picture-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: var(--gap);
+    }
+    &__img-logo {
+        margin-right: 20px;
+    }
+    &__img-logo img,
+    &__picture-examples {
+        border-radius: var(--border-radius-small);
+    }
+    &__about {
+        flex-shrink: 0;
+        display: flex;
+    }
+    &__address {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        color: var(--color-blue-900);
+        margin-bottom: 16px;
+    }
+    &__show-map {
+        margin-bottom: 24px;
+    }
+    &__title-map {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--color-gray-alt);
+        margin-bottom: 8px;
+    }
+    &__link-map {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--color-accent);
+    }
+    &__contact {
+    }
+    &__contact-tel {
+        margin-bottom: 16px;
+    }
+    &__contact-tel,
+    &__contact-time,
+    &__buttons-del {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--color-blue-700);
+    }
+    &__contact-time {
+    }
+    &__examples {
+        display: flex;
+        flex-direction: column;
+    }
+    &__title-examples {
+        margin-bottom: 16px;
+
+        font-size: 20px;
+        color: var(--color-blue-900);
+    }
+    &__picture-list {
+    }
+    &_picture-item {
+    }
+    &__picture-examples {
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__buttons-del {
+        color: var(--color-dark);
+        font-weight: inherit;
+        font-size: inherit;
+    }
+}

@@ -12,4 +12,8 @@
     @include hover {
         opacity: 0.8;
     }
+
+    &__card {
+        padding-inline: 76px;
+    }
 }
