@@ -29,8 +29,6 @@
             row-gap: 34px;
         }
     }
-    &__img-logo {
-    }
     &__img-logo img,
     &__picture-examples {
         border-radius: var(--border-radius-small);
@@ -68,8 +66,6 @@
         font-size: 14px;
         color: var(--color-accent);
     }
-    &__contact {
-    }
     &__contact-tel {
         margin-bottom: 16px;
     }
@@ -83,8 +79,6 @@
         font-weight: 500;
         font-size: 18px;
         color: var(--color-blue-700);
-    }
-    &__contact-time {
     }
     &__examples {
         display: flex;
@@ -101,9 +95,19 @@
         justify-content: center;
         gap: var(--gap);
     }
-    &_picture-item {
+    &__picture-item--more {
+        position: relative;
     }
-    &__picture-examples {
+    &__picture-item--more img {
+        filter: brightness(60%);
+    }
+    &__picture-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: 3;
+        color: var(--color-light);
     }
     &__buttons {
         display: flex;
