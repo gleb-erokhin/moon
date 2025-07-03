@@ -6,6 +6,10 @@
 	background-color: var(--color-bg);
 	padding: 64px 112px;
 
+	@include tablet {
+		padding: 40px 50px;
+	}
+
 	&__main {
 		padding-bottom: 40px;
 		margin-bottom: 24px;
@@ -16,13 +20,20 @@
 		gap: 30px;
 	}
 	&__logo {
-		width: 100%;
 		max-width: 289px;
 		font-size: 1.12rem;
 
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: start;
+
+		@include desktop {
+			margin-right: 100px;
+		}
+
+		@include tablet {
+			margin-right: 14px;
+		}
 	}
 	&__logo-img {
 		padding-bottom: 40px;
@@ -40,7 +51,12 @@
 	}
 	&__info-wrapper {
 		display: flex;
-		column-gap: 37px;
+		gap: 37px;
+
+		@include desktop {
+			flex-direction: column;
+			gap: 16px;
+		}
 	}
 	&__info-list {
 		font-weight: 400;
