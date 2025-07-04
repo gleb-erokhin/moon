@@ -130,4 +130,9 @@
         font-weight: inherit;
         font-size: inherit;
     }
+    &__buttons-link {
+        @include hover {
+            opacity: 0.8;
+        }
+    }
 }

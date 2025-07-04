@@ -94,8 +94,9 @@
 		row-gap: 16px;
 	}
 	&__info-item {
-	}
-	&__info-link {
+		@include hover {
+			opacity: 0.8;
+		}
 	}
 	&__about {
 		width: 204px;
@@ -103,8 +104,6 @@
 	&__extra {
 		line-height: 1.5;
 		color: var(--color-policy);
-	}
-	&__copy {
 	}
 	&__extra &__privacy-policy-link {
 		text-decoration: underline;
