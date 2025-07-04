@@ -120,7 +120,12 @@
             gap: var(--gap);
         }
     }
-    &__buttons-del {
+    &__buttons-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 4px;
+
         color: var(--color-dark);
         font-weight: inherit;
         font-size: inherit;

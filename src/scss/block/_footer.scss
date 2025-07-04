@@ -10,6 +10,10 @@
 		padding: 40px 50px;
 	}
 
+	@include mobile {
+		padding: 35px 25px;
+	}
+
 	&__main {
 		padding-bottom: 40px;
 		margin-bottom: 24px;
@@ -17,7 +21,13 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: start;
-		gap: 30px;
+		column-gap: 100px;
+		row-gap: 30px;
+
+		@include mobile {
+			padding-bottom: 20px;
+			flex-direction: column;
+		}
 	}
 	&__logo {
 		max-width: 289px;
@@ -41,9 +51,24 @@
 	&__logo-text {
 		padding-bottom: 24px;
 	}
+	&__desc {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		column-gap: 115px;
+		row-gap: 30px;
+
+		@include mobile {
+			flex-direction: column;
+			row-gap: 30px;
+		}
+	}
 	&__info {
-		width: 100%;
-		max-width: 402px;
+		width: 402px;
+
+		@include tablet {
+			width: 300px;
+		}
 	}
 	&__info-title {
 		font-size: 1.5rem;
@@ -73,6 +98,7 @@
 	&__info-link {
 	}
 	&__about {
+		width: 204px;
 	}
 	&__extra {
 		line-height: 1.5;
